@@ -119,6 +119,10 @@ def select_topK(dist,  n_neighbors=20):
 class pyWNN():
     
     def __init__(self, adata, reps=['X_pca', 'X_apca'], n_neighbors=20, npcs=[20, 20], seed=14, distances=None):
+        """\
+        Class for running weighted nearest neighbors analysis as described in Hao
+        et al 2021.
+        """
         
         self.seed = seed
         np.random.seed(seed)
