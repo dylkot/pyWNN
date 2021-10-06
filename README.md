@@ -27,5 +27,5 @@ sc.tl.umap(adata, neighbors_key='WNN')
 
 For validation of the method, you can provide distance matrices to pyWNN using the `distance` argument. This is a list of 4 sparse csr_matrices containing KNN distance matrices such as `[RNA_PCA_K20, ADT_PCA_K20, RNA_PCA_K200, ADT_PCA_K200]` reflecting modality 1 with 20 nearest neighbors, modality 2 with 20 nearest neighbors, modality 1 with 200 nearest neighbors, modality 2 with 200 nearest neighbors.
 
-See the notebook in the Tutorials directory for an example
+See the notebook in the Tutorials directory for running this on the [initial SEURAT example data](#https://satijalab.org/seurat/articles/weighted_nearest_neighbor_analysis.html).
 
