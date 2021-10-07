@@ -16,7 +16,7 @@ You then run pyWNN like so:
 ```
 from pyWNN import pyWNN
 WNNobj = pyWNN(adata, reps=['RNA_PCA', 'ADT_PCA'], npcs=[30,18], n_neighbors=20, seed=14)
-adata = WNNobj.compute_wnn(adata_py)
+adata = WNNobj.compute_wnn(adata)
 ```
 
 The .uns and .obsp attributes of adata will be updated to included a new weighted nearest neighbor graph that smartly weights the 2 modalities. You can subsequently run UMAP with this new weighted nearest neighbor graph like so:
